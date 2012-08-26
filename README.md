@@ -1,13 +1,4 @@
 SpreeSuppliers
-==============
-
-Introduction goes here.
-
-
-Example
-=======
-
-Example goes here.
 
 Testing
 -------

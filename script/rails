@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This command will automatically be run when you run "rails" with Rails 3 gems installed from the root of your application.
 
 ENGINE_ROOT = File.expand_path('../..', __FILE__)
@@ -5,3 +6,12 @@ ENGINE_PATH = File.expand_path('../../lib/spree_suppliers/engine', __FILE__)
 
 require 'rails/all'
 require 'rails/engine/commands'
+=======
+#!/usr/bin/env ruby
+# This command will automatically be run when you run "rails" with Rails 3 gems installed from the root of your application.
+
+
+ENGINE_PATH = File.expand_path('../..',  __FILE__)
+load File.expand_path('../../spec/dummy/script/rails',  __FILE__)
+
+>>>>>>> 6c14a260bc714eaab1a4f33097af681425e219a1

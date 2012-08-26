@@ -16,6 +16,7 @@ Gem::PackageTask.new(spec) do |p|
 end
 
 desc 'Release to gemcutter'
+
 task :release => :package do
   require 'rake/gemcutter'
   Rake::Gemcutter::Tasks.new(spec).define
@@ -23,6 +24,7 @@ task :release => :package do
 end
 
 desc 'Generates a dummy app for testing'
+
 task :test_app do
   ENV['LIB_NAME'] = 'spree_suppliers'
   Rake::Task['common:test_app'].invoke
