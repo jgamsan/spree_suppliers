@@ -1,4 +1,5 @@
 es:
+  supplier: "Proveedor"
   title: "Titulo"
   phone: "Telefono"
   fax: "Fax"
