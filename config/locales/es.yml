@@ -1,0 +1,12 @@
+es:
+  title: "Titulo"
+  phone: "Telefono"
+  fax: "Fax"
+  website: "Website"
+  notes: "Notas"
+  twitter: "Twitter"
+  facebook: "Facebook"
+  description: "Descripcion"
+  new_supplier: "Nuevo Proveedor"
+  listing_supplier: "Listado de Proveedores"
+  editing_supplier: "Editando Proveedor"

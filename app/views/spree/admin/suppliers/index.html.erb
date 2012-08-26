@@ -1,0 +1,32 @@
+<h1><%= t("listing_suppliers") %></h1>
+
+<table class="index">
+  <thead>
+  <tr>
+    <th><%= t("name") %></th>
+    <th><%= t("title") %></th>
+    <th><%= t("phone") %></th>
+    <th><%= t("email") %></th>
+    <th>&nbsp;</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <% @suppliers.each do |supplier| %>
+      <tr>
+        <td><%= supplier.name %></td>
+        <td><%= supplier.title %></td>
+        <td><%= supplier.phone %></td>
+        <td><%= supplier.email %></td>
+        <td>
+          <%= link_to_edit supplier %> &nbsp;
+          <%= link_to_delete supplier %> &nbsp;
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p data-hook="links">
+    <%= link_to icon('add') + ' ' + t(:new_supplier), new_object_url, :id => 'new_supplier_link' %>
+</p>
