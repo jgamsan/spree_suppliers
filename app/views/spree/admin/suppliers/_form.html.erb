@@ -26,17 +26,17 @@
         <%= f.email_field :email  %>
         <%= error_message_on :supplier, :email %>
       <% end %>
+      <%= f.field_container :notes do %>
+        <%= f.label :notes, t("notes") %><br />
+        <%= f.text_area :notes, {:cols => 30, :rows => 2}  %>
+        <%= error_message_on :supplier, :notes %>
+      <% end %>
+    </div>
+    <div class="left" data-hook="admin_supplier_form_right">
       <%= f.field_container :website do %>
         <%= f.label :website, t("website") %><br />
         <%= f.text_field :website  %>
         <%= error_message_on :supplier, :website %>
-      <% end %>
-    </div>
-    <div class="left" data-hook="admin_supplier_form_right">
-      <%= f.field_container :notes do %>
-        <%= f.label :notes, t("notes") %><br />
-        <%= f.text_area :notes, {:cols => 30, :rows => 4}  %>
-        <%= error_message_on :supplier, :notes %>
       <% end %>
       <%= f.field_container :twitter do %>
         <%= f.label :twitter, t("twitter") %><br />
@@ -50,7 +50,7 @@
       <% end %>
       <%= f.field_container :description do %>
         <%= f.label :description, t("description") %><br />
-        <%= f.text_area :description, {:cols => 30, :rows => 4}  %>
+        <%= f.text_area :description, {:cols => 30, :rows => 2}  %>
         <%= error_message_on :supplier, :description %>
       <% end %>
     </div>
