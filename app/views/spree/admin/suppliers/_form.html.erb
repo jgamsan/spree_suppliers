@@ -1,6 +1,6 @@
 <div data-hook="admin_suppliers_form_fields">
   <div class="clearfix">
-    <div class="left" data-hook="admin_supplier_form_left">
+    <div class="left eight columns alpha" data-hook="admin_supplier_form_left">
       <%= f.field_container :name do %>
         <%= f.label :name, t("name") %><br />
         <%= f.text_field :name  %>
@@ -32,7 +32,7 @@
         <%= error_message_on :supplier, :notes %>
       <% end %>
     </div>
-    <div class="left" data-hook="admin_supplier_form_right">
+    <div class="right eight columns omega" data-hook="admin_supplier_form_right">
       <%= f.field_container :website do %>
         <%= f.label :website, t("website") %><br />
         <%= f.text_field :website  %>
